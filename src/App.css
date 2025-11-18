@@ -1,0 +1,249 @@
+@import "tailwindcss";
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: oklch(0.145 0 0);
+  --primary: #030213;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --radius: 0.625rem;
+}
+
+/* Dark mode overrides */
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+}
+
+/* Base styles */
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+  }
+
+  p {
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+  }
+
+  button {
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+
+  /* Hero Section */
+  /* Hero Section */
+  section.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem;
+    background-color: var(--primary);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: var(--primary-foreground);
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Dark overlay for readability */
+  section.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+  }
+
+  /* Content wrapper */
+  section.hero > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Badge styling */
+  section.hero .badge {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    color: var(--primary-foreground);
+  }
+
+  /* Main title */
+  section.hero h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+  }
+
+  /* Subtitle */
+  section.hero h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* Description text */
+  section.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+  }
+
+  /* Button container */
+  section.hero .button-group {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Hero buttons */
+  section.hero button,
+  section.hero .button {
+    padding: 0.875rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Watch Trailer button - Red */
+  section.hero button.primary,
+  section.hero .button.primary {
+    background-color: #d4183d;
+    color: #ffffff;
+  }
+
+  section.hero button.primary:hover,
+  section.hero .button.primary:hover {
+    background-color: #b81232;
+    box-shadow: 0 4px 12px rgba(212, 24, 61, 0.3);
+  }
+
+  /* Secondary button - White/Light */
+  section.hero button.secondary,
+  section.hero .button.secondary {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  section.hero button.secondary:hover,
+  section.hero .button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+
+  /* About Section */
+  section.about {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  section.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section.about p {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+  }
+
+  /* Waitlist / Newsletter Section */
+  section.waitlist {
+    padding: 6rem 2rem;
+    background-color: var(--background);
+    text-align: center;
+  }
+
+  section.waitlist h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  section.waitlist p {
+    font-size: 1rem;
+    color: var(--muted-foreground);
+    margin-bottom: 2rem;
+  }
+
+  section.waitlist form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  footer a {
+    color: var(--primary-foreground);
+    margin: 0 0.5rem;
+    transition: color 0.25s;
+  }
+
+  footer a:hover {
+    color: var(--secondary-foreground);
+  }
+}
