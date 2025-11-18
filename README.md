@@ -1,6 +1,6 @@
 # ISTWA — Animated Film & Interactive Learning Platform
 
-A modern landing page for the **LIBERTÉ animated film** and **waitlist signup**, built to scale into a full studio site including an interactive learning platform and future animated titles.
+A modern landing page for the **ISTWA animated film** and **waitlist signup**, built to scale into a full studio site including an interactive learning platform and future animated titles.
 
 This landing page includes:
 - A waitlist signup form
