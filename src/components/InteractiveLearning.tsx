@@ -66,7 +66,7 @@ export function InteractiveLearning() {
             >
               <div className="bg-neutral-900 p-8 rounded-lg border border-neutral-800 hover:border-blue-600/50 transition-all duration-300 h-full">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center shrink-0">
                     <feature.icon className="w-6 h-6 text-blue-500" />
                   </div>
                   <div>
@@ -84,7 +84,7 @@ export function InteractiveLearning() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-blue-600/10 to-purple-600/10 border border-blue-600/20 rounded-lg p-8 md:p-12 text-center"
+          className="bg-linear-to-br from-blue-600/10 to-purple-600/10 border border-blue-600/20 rounded-lg p-8 md:p-12 text-center"
         >
           <h3 className="text-3xl md:text-4xl text-white mb-4">
             Learn History Your Way

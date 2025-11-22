@@ -110,7 +110,7 @@ export function Educators() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="aspect-[4/3] rounded-lg overflow-hidden border border-neutral-800">
+            <div className="aspect-4/3 rounded-lg overflow-hidden border border-neutral-800">
               <img
                 src="https://images.unsplash.com/photo-1752920299210-0b727800ea50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwbGVhcm5pbmclMjBib29rc3xlbnwxfHx8fDE3NjI1Nzc4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Students learning"
@@ -156,7 +156,7 @@ export function Educators() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-green-600/10 to-blue-600/10 border border-green-600/20 rounded-lg p-8 md:p-12"
+          className="bg-linear-to-br from-green-600/10 to-blue-600/10 border border-green-600/20 rounded-lg p-8 md:p-12"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>

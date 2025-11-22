@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
 import { Play, Bell } from "lucide-react";
-import { useRef } from "react";
+// import { useRef } from "react";
 import { useScrollToRef } from "../hooks/useScrollToRef";
 
 export function Hero({ waitlistRef }: { waitlistRef: React.RefObject<HTMLElement | null> }) {

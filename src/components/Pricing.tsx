@@ -109,7 +109,7 @@ export function Pricing() {
               className="relative"
             >
               {tier.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-yellow-600 to-orange-600 rounded-full flex items-center gap-1">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-linear-to-r from-yellow-600 to-orange-600 rounded-full flex items-center gap-1">
                   <Sparkles className="w-4 h-4 text-white" />
                   <span className="text-white text-sm">Most Popular</span>
                 </div>
@@ -136,10 +136,10 @@ export function Pricing() {
                   </div>
                 </div>
 
-                <ul className="space-y-3 mb-8 flex-grow">
+                <ul className="space-y-3 mb-8 grow">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <Check className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                       <span className="text-neutral-300">{feature}</span>
                     </li>
                   ))}
@@ -148,7 +148,7 @@ export function Pricing() {
                 <Button
                   className={
                     tier.popular
-                      ? "bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 text-white w-full"
+                      ? "bg-linear-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 text-white w-full"
                       : "bg-neutral-800 hover:bg-neutral-700 text-white w-full"
                   }
                   size="lg"

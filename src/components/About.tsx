@@ -41,13 +41,13 @@ export function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-lg overflow-hidden">
+            <div className="aspect-4/5 rounded-lg overflow-hidden">
               <img
-                src="https://pixabay.com/get/g45d02dbf98e8d206d3e7ba2c693ffe94b40802b8d13a053499ed2a6be7cb47b4c0f2ae3411c28e09bcd1e8cd34753fc5.jpg"
+                src="/images/citadel-la-ferriere.jpg"
                 alt="Citadel La Ferrière in Haiti"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-neutral-950 via-transparent to-transparent"></div>
             </div>
             <div className="absolute -bottom-6 -left-6 bg-red-600 px-6 py-4 rounded">
               <div className="text-white">
